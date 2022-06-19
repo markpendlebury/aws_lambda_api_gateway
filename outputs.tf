@@ -17,3 +17,8 @@ output "api_gateway_hosted_zone_id" {
   description = "value of aws_apigateway hosted zone id"
   value       = aws_apigatewayv2_domain_name.domain.domain_name_configuration[0].hosted_zone_id
 }
+
+output "domain_name" {
+  description = "value of aws_apigateway domain"
+  value       = aws_apigatewayv2_domain_name.domain.domain_name
+}
